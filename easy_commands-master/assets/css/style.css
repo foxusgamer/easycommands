@@ -1,0 +1,348 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#notification{
+  position: fixed;
+  width: 100%;
+  height: 0;
+  top: 60px;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+	transition: 0.5s;
+  animation-name: notificationShow;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+
+@keyframes notificationShow{
+  0%{
+  height: 0px;
+  }
+  20%{
+    height: fit-content;
+  }
+  90%{
+    height: fit-content;
+  }
+  100%{
+    height: 0px;
+  }
+}
+
+.page-container {
+    height:100%;
+}
+
+.fill{
+    width:100%;
+    height:100%;
+    min-height:100%;
+    background-size: cover;
+    position: relative;  
+}
+
+.card{
+  border: none;
+}
+
+.card-header, .card-footer{
+  border-radius: 0!important;
+}
+
+.navbar{
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  width: 100%;
+  border-bottom: 4px solid #ffc107;;
+}
+
+
+/*Navbar*/
+
+.navbar-brand{
+  font-family: 'Cinzel', serif;
+}
+
+/*Login*/
+.login-control, .login-control:active, .login-control:visited, .login-control:focus-within{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid white;
+  background: 0;
+  transition: 0.15s;
+  color: white;
+  outline: none!important;
+}
+
+.login-control:focus, .login-control:hover {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #ffc107;
+  background: 0;
+  color: white;
+}
+
+.bg-login{
+    background-image: url(../img/login.jpg);
+}
+
+.login-form{
+  width: 30%;
+  margin: auto;
+  color: white!important;
+}
+
+.login-title{
+  text-align: center!important;
+  color: white!important;
+}
+
+.login-title h1{
+  font-family: 'Cinzel', serif;
+  font-size: 70px;
+    padding-top: 50px;
+}
+
+.login-title h2{
+  color: #ffc107;
+  font-size: 20px;
+}
+
+/*producao*/
+
+.bg-production{
+    background-image: url(../img/producao.jpg);
+}
+
+/*mesas*/
+
+.bg-tables{
+    background-image: url(../img/mesas.jpg);
+}
+
+/*Caixa*/
+
+.bg-cashier{
+    background-image: url(../img/caixa.jpg);
+}
+
+/*Usuários*/
+
+.bg-users{
+    background-image: url(../img/usuarios.jpg);
+}
+
+/*Produtos*/
+.bg-products{
+    background-image: url(../img/products.jpg);
+}
+
+/*categorias*/
+.bg-categories{
+    background-image: url(../img/categories.jpg);
+}
+
+/*setores*/
+.bg-sectors{
+    background-image: url(../img/setores.jpg);
+}
+
+@media only screen and (max-width: 600px) {
+  .login-title h1{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    padding-top: 50px;
+  }
+  .login-form{
+    width: 90%;
+  }
+}
+
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.new-icon{
+  font-size: 16px!important;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty{
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label{
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+ /* margin-top: 2em;*/
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before{
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label{
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before{
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label{
+  color: #337ab7;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before{
+  content: '\2714';
+  text-indent: .9em;
+  color: #337ab7;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before{
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before{
+  color: #fff;
+  background-color: #337ab7;
+}
+#confirm {
+  display: none;
+  z-index: 2;
+  border: 1px solid #aaa;
+  position: fixed;
+  width: 250px;
+  left: 44%;
+  top: 25%;
+  margin-left: -100px;
+  padding: 6px 8px 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#confirm button {
+  display: inline-block z;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+#confirm .message {
+  text-align: center;
+}
+.card{
+  border-radius: 0px;
+}
+
+.card-login{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.btn{
+  border-radius: 0px;
+}
+
+.btn-none{
+  background: none;
+  border: none;
+}
+
+.form-control{
+  border-radius: 0px;
+}
+input:focus{
+  box-shadow: none!important;
+  outline:none!important;
+}
+
+.comanda-detalhes{
+    margin-top: 47px;
+    background-image: url(../img/paper.jpg)!important;
+    background-size: 100%;
+    background-position-y: -20px;
+    line-height: 24px;
+    font-family: 'Handlee', cursive;
+}
+
+.tape-a {
+    position: absolute;
+    left: -8%;
+    top: 0px;
+    width: 48px;
+    height: 18px;
+    background-color: #ffeb9988;
+    transform: rotate(-37deg);
+}
+
+
+.tape-b{
+    position: absolute;
+    right: -5%;
+    top: 0px;
+    width: 41px;
+    height: 18px;
+    background-color: #ffeb9988;
+    transform: rotate(37deg);
+}
+
+.order-delete{
+  float: right;
+  cursor: pointer;
+}
+.totalPrice{
+  font-size: x-large;
+}
+
+.vaiFikaTudoPreto{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+  display: none;
+}

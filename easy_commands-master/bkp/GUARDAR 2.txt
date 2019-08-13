@@ -1,0 +1,14 @@
+
+=============================================================================================================
+
+<?php 
+$produtos = mysql_getdata("SELECT * FROM comandas where comandas_id = '{$value['command_id']}'");
+                        
+foreach($produtos AS $key => $pvalue){
+
+?>
+ <li><?php echo $value["product_qtd"];?> x <?php echo $value["product_name"]; ?> </li>
+ <?php } ?>
+
+=============================================================================================================
+

@@ -1,0 +1,53 @@
+<div class="production-page">
+    <div class="container-fluid">
+        <div class="row">
+            <?php 
+                    foreach ($list AS  $key =>$value){
+                        ?>
+                        <div class="col-md-4">
+                        <div class="card comanda-detalhes">
+                            <div class="tape-a"></div>
+                            <div class="tape-b"></div>
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5 class="text-left text-danger text-bold"><?php echo '#'.$value["order_table_number"]; ?></h5>
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="text-right text-danger">
+                                            <?php echo $value["order_time"]; ?>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+
+                                <!-- PRODUTOS VEM AQUI-->
+                                <ul>
+                                    <li><?php echo $value["product_qtd"];?> x <?php echo $value ["product_name"]; ?> </li>
+                                <ul>
+                                <!--
+                                <a> <?php echo $value["product_obs"]; ?> </a>
+                                -->
+                            </div>
+                            <div class="card-footer text-center text-secondary">
+                                <div class="row" id="<?php $value["order_table_number"]; ?>">
+                                    <div class="col edit">
+                                        <a href="#"><i class="fa fa-clock"></i></a>
+                                    </div>
+                                    <div class="col edit">
+                                        <a href="#"><i class="fa fa-play"></i></a>
+                                    </div>
+                                    <div class="col edit">
+                                        <a href="#"><i class="fa fa-concierge-bell"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                <?php
+                    }
+                ?>
+        </div>
+    </div>
+</div>

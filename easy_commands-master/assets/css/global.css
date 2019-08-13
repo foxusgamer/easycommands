@@ -1,0 +1,109 @@
+/*Colors*/
+/* .badge{
+    font-size: 8px;
+} */
+
+.bg-black{
+    background-color: #333333!important;
+}
+
+.bg-white{
+    background-color: #e2e6ea!important;
+}
+
+.bg-blue{
+    background-color: #93c1be!important;
+}
+
+.txt-black{
+    color: #333333!important;
+}
+
+.txt-white{
+    color: #f2f2f2!important;
+}
+
+.txt-blue{
+    color: #93c1be!important;
+}
+/*Buttons*/
+
+.btn-blue{
+    background-color: #93c1be!important;
+    color: #f2f2f2!important;
+    border-color: #93c1be!important;
+}
+
+.btn-black{
+    background-color: #333333!important;
+    color: #f2f2f2!important;
+    border-color: #333333!important;
+}
+
+.btn-white{
+    background-color: #f2f2f2!important;
+    color: #333333!important;
+    border-color: #f2f2f2!important;
+}
+
+
+
+
+.list-table .card{
+    margin-bottom: 20px;
+}
+
+.card-icon{
+    float: right;
+    color: #333;
+    margin: 0 10px;
+}
+
+.numeroMesa{
+    width: 40px;
+    display: inline-block;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.add-table{
+    padding: 7px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 15px;
+    transition: 0.5s;
+    /* border: none!important; */
+    cursor: pointer;
+    border: 2px outset#ffc107;
+}
+
+<<<<<<< HEAD
+.add-table:hover{
+    border: 2px inset #ffc107
+}
+=======
+.new-icon{
+    font-size: 50px;
+    color:#212529!important;
+    
+}
+
+>>>>>>> a0aec30e1d655546d8f424170a27e890881eae6c
+
+.notifyjs-corner{
+    left: 25%;
+}
+
+.btn-outline-dark:hover{
+    color: #ffc107!important;
+  }
+
+  .btn-dark{
+      color: #ffc107!important;
+  }
+
